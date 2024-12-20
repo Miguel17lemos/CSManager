@@ -21,10 +21,6 @@
         "title": "Hello World"
       },
       {
-        "command": "csmanager.openGUI",
-        "title": "CSManager"
-      },
-      {
         "command": "csmanager.pull",
         "title": "CSManager: Pull"
       },
