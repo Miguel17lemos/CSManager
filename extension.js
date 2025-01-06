@@ -1,7 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 const vscode = require('vscode');
 const {
-	openGUI,
 	pullCommand, 
 	pushCommand,
 	submitCommand,
@@ -24,7 +23,6 @@ function activate(context) {
 	});
 
 	context.subscriptions.push(disposable);
-	context.subscriptions.push(openGUI);
 	context.subscriptions.push(pullCommand);
 	context.subscriptions.push(pushCommand);
 	context.subscriptions.push(submitCommand);

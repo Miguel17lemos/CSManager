@@ -107,7 +107,10 @@ async function pushScripts(pScripts) {
                 .input('fileCode', sql.NVarChar, pFileCode)
                 .query(
                     `UPDATE ${mapTables.get(item.type)}
-                    SET ${pFile.split('.').slice(0, -1).join('.')} = @fileCode
+                    SET ${pFile.split('.').slice(0, -1).join('.')} = @fileCode,
+                    usrdata = CAST(GETDATE() as date), 
+                    usrhora = CONVERT(char(8), GETDATE(), 108), 
+                    usrinis = LEFT(SUSER_NAME(), 3)
                     WHERE ${mapTables.get(item.type)}stamp LIKE '%${pScriptSTAMP}%'`
                 );
 
