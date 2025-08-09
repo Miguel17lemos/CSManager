@@ -1,8 +1,8 @@
-<img src="https://imgur.com/10kuTxK">
+<img src="https://i.imgur.com/10kuTxK.png">
 
 # 🚀 Aumenta a tua produtividade e trabalha com a PHC CS Framework de forma simples e eficiente!
 
-<img src="https://imgur.com/UDmWDJK"><br>
+<img src="https://i.imgur.com/UDmWDJK.gif"><br>
 ### 📥 Recebe os teus scripts do PHC CS Web diretamente no VS Code!
 Transforma o teu fluxo de trabalho no PHC CS Web com o **PHC Cs Code**. Importa facilmente os scripts criados para a tua pasta de trabalho e utiliza o poder do **Visual Studio Code** junto com as tuas extensões favoritas para uma experiência de programação eficiente e personalizada.
 
@@ -31,7 +31,7 @@ Para instalar o **PHC Cs Code**, siga estes passos:
 ## 📚 Como Usar
 Após instalar o **PHC Cs Code**, podes começar a usá-lo seguindo estes passos:
 1. Abre a **Linha de Comandos do Visual Studio Code** através da barra de pesquisa na parte superior do ecrã do VSCode e escolhe a opção `Mostrar e Executar Comandos >`, ou simplesmente digita um `>`. Em alternativa, existe o atalho `Ctrl+Shift+P`.
-2. Pesquisa por **PHCCsCode** e serão apresentados todos os comandos da extensão. <br><img src="https://imgur.com/UDmWDJK">
+2. Pesquisa por **PHCCsCode** e serão apresentados todos os comandos da extensão. <br><img src="https://i.imgur.com/UDmWDJK.gif">
 <br>
 
 ## 🚨 **Avisos Importantes:
@@ -46,7 +46,7 @@ Pode fazê-lo através do comando `PHCCsCode: Configuration`.<br>
 Ou, em alternativa, uma forma mais prática para alguns, editar diretamente nas `Definições` do Visual Studio Code.
 1. No menu superior, clique em `Ficheiro` e depois em `Preferências`.
 2. No submenu que aparece, selecione "Configurações" (ou utilize o atalho de teclado `Ctrl+,`).
-3. Na barra de pesquisas, procure por `PHCCsCode` e preencha todos os campos de configuração da extensão, os cookies de seesão do PHC deve ser copiados após o login na aplicação (ASP.NET_SessionId=Este cookie só muda quando é realizado um login | PHC_Intranet202404=Muda de x em x tempo, mediante o parametro authentication do ficheiro web.config do IIS que por defeito está 60 minutos, sempre que os coockies expirarem a extensão informará) <br> <img src="https://imgur.com/a/EK2LUY1">
+3. Na barra de pesquisas, procure por `PHCCsCode` e preencha todos os campos de configuração da extensão, os cookies de seesão do PHC deve ser copiados após o login na aplicação (ASP.NET_SessionId=Este cookie só muda quando é realizado um login | PHC_Intranet202404=Muda de x em x tempo, mediante o parametro authentication do ficheiro web.config do IIS que por defeito está 60 minutos, sempre que os coockies expirarem a extensão informará) <br> <img src="https://i.imgur.com/nSut5Rc.png">
 
 ## 🛠️ Problemas Conhecidos e Soluções
 
