@@ -2,6 +2,7 @@
   "name": "phccscode",
   "displayName": "PHC Cs Code",
   "description": "Extensão para apoio ao desenvolvimento na PHC CS Framework.",
+  "icon": "images/logo.png",
   "publisher": "miguel17lemos",
   "version": "1.5.0",
   "engines": {
