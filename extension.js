@@ -1,32 +1,23 @@
 // The module 'vscode' contains the VS Code extensibility API
-const vscode = require('vscode');
-const {
-	pullCommand, 
-	pushCommand,
-	submitCommand,
-	configuration
-} = require('./src/scripts/scripts');
-const {	checkConfiguration } = require("./src/scripts/checkConfiguration");
+const {	Proc_CheckConfiguration, Proc_CheckSqlConnection } = require("./src/settings");
+const { Proc_CommandRegister } = require("./src/commands")
 
 // This method is called when your extension is activated
 /**
  * @param {vscode.ExtensionContext} context
  */
-function activate(context) {
-	checkConfiguration()
-
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "csmanager" is now active!');
-
-	const disposable = vscode.commands.registerCommand('csmanager.helloWorld', function () {
-		vscode.window.showInformationMessage('Hello World from CSManager!');
-	});
-
-	context.subscriptions.push(disposable);
-	context.subscriptions.push(pullCommand);
-	context.subscriptions.push(pushCommand);
-	context.subscriptions.push(submitCommand);
+function activate(context) 
+{
+	Proc_CommandRegister(context);
+	
+	if (!Proc_CheckConfiguration()) 
+	{
+		return false;
+	}
+	
+	Proc_CheckSqlConnection(true)
 }
+
 
 // This method is called when your extension is deactivated
 function deactivate() {}

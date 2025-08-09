@@ -1,9 +1,9 @@
 {
-  "name": "csmanager",
-  "displayName": "CSManager",
+  "name": "phccscode",
+  "displayName": "PHC Cs Code",
   "description": "Extensão para apoio ao desenvolvimento na PHC CS Framework.",
-  "publisher": "migueelss",
-  "version": "0.1.1",
+  "publisher": "miguel17lemos",
+  "version": "1.5.0",
   "engines": {
     "vscode": "^1.92.0"
   },
@@ -15,55 +15,41 @@
   ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [
+    "commands": [     
       {
-        "command": "csmanager.helloWorld",
-        "title": "Hello World"
+        "command": "phccscode.pull",
+        "title": "phccscode: Pull"
       },
       {
-        "command": "csmanager.pull",
-        "title": "CSManager: Pull"
+        "command": "phccscode.push",
+        "title": "phccscode: Push"
       },
       {
-        "command": "csmanager.push",
-        "title": "CSManager: Push"
+        "command": "phccscode.push_activate_text_editor",
+        "title": "phccscode: Submit Current File"
       },
       {
-        "command": "csmanager.submit",
-        "title": "CSManager: Submit Current File"
-      },
-      {
-        "command": "csmanager.configuration",
-        "title": "CSManager: Configuration"
+        "command": "phccscode.settings",
+        "title": "phccscode: Settings"
       }
     ],
     "configuration": {
       "type": "object",
       "properties": {
-        "csManager.dbhost": {
+        "phccscode.ConnectionString": {
           "type": "string",
-          "default": "",
-          "description": "Servidor de base de dados."
+          "default": "Server=localhost,1433;Database=database;User Id=username;Password=password;Encrypt=false",
+          "description": "Connection String"
         },
-        "csManager.port": {
+        "phccscode.PhcURL": {
           "type": "string",
-          "default": "1433",
-          "description": "Porta do servidor de base de dados."
+          "default": "http://PHC/Intranet",
+          "description": "URL do PHC"
         },
-        "csManager.user": {
+        "phccscode.PhcSessionCookies": {
           "type": "string",
-          "default": "",
-          "description": "Nome de utilizador da base de dados."
-        },
-        "csManager.password": {
-          "type": "string",
-          "default": "",
-          "description": "Senha do utilizador da base de dados."
-        },
-        "csManager.db": {
-          "type": "string",
-          "default": "",
-          "description": "Nome da base de dados."
+          "default": "ASP.NET_SessionId=XXXXXXXXXX; PHC_Intranet202404=XXXXXXXXXX",
+          "description": "Cookies de sessão atual PHC"
         }
       }
     }
@@ -82,6 +68,7 @@
     "eslint": "^9.9.1"
   },
   "dependencies": {
+    "axios": "^1.7.9",
     "mssql": "^11.0.1"
   }
 }
