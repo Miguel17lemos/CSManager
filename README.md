@@ -21,7 +21,7 @@ Estamos sempre à procura de contribuições para melhorar o PHC Cs Code! Se des
 ## 📦 Instalação
 Para instalar o **PHC Cs Code**, siga estes passos:
 
-1. **Descarregue o ficheiro** `PHCCsCode(...).vsix` da última versão disponível na [secção de Releases do Repositório.](https://github.com/Miguel17lemos/CSManager/releases)
+1. **Descarregue o ficheiro** `PHCCsCode(...).vsix` da última versão disponível na [secção de Releases do Repositório.](https://github.com/Miguel17lemos/PHCCsCode/releases)
 2. Abra o **Visual Studio Code**.
 3. Vá até a aba de extensões (ou pressione `Ctrl+Shift+X`)
 4. Clique nos três pontos no canto superior direito da aba de extensões e selecione **Instalar a partir do VSIX**.
@@ -52,4 +52,4 @@ Ou, em alternativa, uma forma mais prática para alguns, editar diretamente nas 
 
 N/A
 
-Se tiveres problemas que não consegues resolver, não hesites em abrir uma [issue](https://github.com/Miguel17lemos/CSManager/issues) no repositório do GitHub.
+Se tiveres problemas que não consegues resolver, não hesites em abrir uma [issue](https://github.com/Miguel17lemos/PHCCsCode/issues) no repositório do GitHub.
